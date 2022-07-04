@@ -1,0 +1,14 @@
+{
+  "name": "heroku-pinger",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node index",
+    "test": "node test"
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.6"
+  }
+}
