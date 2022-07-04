@@ -1,0 +1,11 @@
+{
+  "hosts": [
+    {
+      "name": "https://my-app.herokuapp.com/",
+      "keepAliveBetween": [
+        20,
+        8
+      ]
+    }
+  ]
+}
