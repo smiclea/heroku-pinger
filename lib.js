@@ -12,9 +12,8 @@ export const handleHost = async host => {
   if (shouldBeAlive(host.keepAliveBetween)) {
     const start = Date.now()
     await fetch(host.name)
-    const message = `Pinged ${host.name} in ${(Date.now() - start) / 1000} seconds`
-    logMessage(message)
+    logMessage(`Pinged ${host.name} in ${(Date.now() - start) / 1000} seconds`)
   } else {
-    console.log(`${host.name} is outside of keepAliveBetween interval.`)
+    logMessage(`${host.name} is outside of keepAliveBetween interval.`)
   }
 }

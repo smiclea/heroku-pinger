@@ -2,7 +2,7 @@ import fs from 'fs'
 
 const LOG_FILE = 'log.txt'
 
-export const logMessage = message => {
+export const logMessage = (message) => {
   const datedMessage = `${new Date().toISOString()} - ${message}`
   console.log(datedMessage)
   fs.appendFileSync(LOG_FILE, `${datedMessage}\n`)
